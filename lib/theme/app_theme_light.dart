@@ -18,8 +18,8 @@ class AppThemeLight extends AppTheme with ILightTheme {
         fontFamily: _FONT_FAMILY,
         colorScheme: _appColorScheme,
         textTheme: textTheme(),
+        brightness: Brightness.light,
         appBarTheme: ThemeData.light().appBarTheme.copyWith(
-            brightness: Brightness.light,
             color: Colors.transparent,
             elevation: 0,
             iconTheme: IconThemeData(color: Colors.black87, size: 21)),
@@ -61,9 +61,9 @@ class AppThemeLight extends AppTheme with ILightTheme {
   ColorScheme get _appColorScheme {
     return ColorScheme(
         primary: colorSchemeLight!.black,
-        primaryVariant: Colors.white, //xx
+        primaryContainer: Colors.white, //xx
         secondary: Colors.green,
-        secondaryVariant: colorSchemeLight!.azure,
+        secondaryContainer: colorSchemeLight!.azure,
         surface: Colors.blue, //xx
         background: Color(0xfff6f9fc), //xx
         error: Colors.red[900]!,
